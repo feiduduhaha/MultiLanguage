@@ -77,4 +77,5 @@ import csv
 ## 5. 关闭文件
 #csvFile.close()
 #print ("\n处理完毕生成scv表格文件" + "\n")
+print ("\n****************\n   执行过滤脚本\n****************\n")
 sys.exit(0)   
