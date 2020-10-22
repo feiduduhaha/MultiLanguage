@@ -1,0 +1,6 @@
+framework module MultiLanguage {
+  umbrella header "MultiLanguage-umbrella.h"
+
+  export *
+  module * { export * }
+}

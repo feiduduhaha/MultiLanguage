@@ -32,11 +32,25 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'MultiLanguage/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MultiLanguage' => ['MultiLanguage/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'Multi_language' => ['Multi_language/Assets/*.png','Multi_language/Files/*.*']
+  }
+  s.script_phase = { :name => 'multi-languageScript', :script => 'echo "输入当前工作目录"
+    cd ..
+    podsPath=`pwd`
+    shortPath="Multi_language/Resources/"
+    plistPath="${podsPath}/Pods/${shortPath}Config.plist"
+    #echo $plistPath
+    pyScriptPath="${podsPath}/Pods/${shortPath}firstScript.py"
+    #echo $pyScriptPath
+    #pyScriptPath="/Users/silence/Desktop/test.py"
+    #plistPath="/Users/silence/Documents/Dachen_Work/multi_language/Multi_language/Multi_language/Files/Config.plist"
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+    NeedRunScript=`/usr/libexec/PlistBuddy -c "Print NeedRunScript" $plistPath`
+
+    if [ NeedRunScript ]
+    then
+        echo "执行python脚本"
+        ${pyScriptPath}
+    fi'}
 end

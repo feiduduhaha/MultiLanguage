@@ -1,0 +1,16 @@
+PODS:
+  - MultiLanguage (0.1.0)
+
+DEPENDENCIES:
+  - MultiLanguage (from `../`)
+
+EXTERNAL SOURCES:
+  MultiLanguage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MultiLanguage: a185460c8c73bd3a5e58987d4f974ab1c6f8c47a
+
+PODFILE CHECKSUM: 4c6e94975f92fcf06ee3d146c6fcee8a34d0deb3
+
+COCOAPODS: 1.9.0
