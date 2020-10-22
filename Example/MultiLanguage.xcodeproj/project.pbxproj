@@ -23,6 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		E8F9CB7725418F770055F186 /* multi-language.json in Resources */ = {isa = PBXBuildFile; fileRef = E8F9CB7625418F770055F186 /* multi-language.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		36FDF3CF838B159E3FB9F1A0 /* Pods_MultiLanguage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiLanguage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		59CC7A23D900C19ABC4D81B5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		59CC7A23D900C19ABC4D81B5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MultiLanguage_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiLanguage_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,11 +59,12 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		83FA7E4A62659784197C8739 /* MultiLanguage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MultiLanguage.podspec; path = ../MultiLanguage.podspec; sourceTree = "<group>"; };
+		83FA7E4A62659784197C8739 /* MultiLanguage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MultiLanguage.podspec; path = ../MultiLanguage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0D650D2D630AE9190663A8D /* Pods-MultiLanguage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiLanguage_Example.release.xcconfig"; path = "Target Support Files/Pods-MultiLanguage_Example/Pods-MultiLanguage_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DCCF7CD871E0F246779E2431 /* Pods-MultiLanguage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiLanguage_Example.debug.xcconfig"; path = "Target Support Files/Pods-MultiLanguage_Example/Pods-MultiLanguage_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E0451E78A8FB20A99D0016FF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E0451E78A8FB20A99D0016FF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E8F9CB7625418F770055F186 /* multi-language.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "multi-language.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +98,6 @@
 				DCCF7CD871E0F246779E2431 /* Pods-MultiLanguage_Example.debug.xcconfig */,
 				B0D650D2D630AE9190663A8D /* Pods-MultiLanguage_Example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -139,6 +140,7 @@
 				6003F59C195388D20070C39A /* MULTIAppDelegate.h */,
 				6003F59D195388D20070C39A /* MULTIAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				E8F9CB7625418F770055F186 /* multi-language.json */,
 				6003F5A5195388D20070C39A /* MULTIViewController.h */,
 				6003F5A6195388D20070C39A /* MULTIViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -249,6 +251,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -268,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8F9CB7725418F770055F186 /* multi-language.json in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,

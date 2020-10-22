@@ -7,12 +7,12 @@
 //
 
 #import "MULTIAppDelegate.h"
-
+#import <MultiLanguage/Multi_language.h>
 @implementation MULTIAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    LanguageManager.languageType = @"en_GB";
     return YES;
 }
 

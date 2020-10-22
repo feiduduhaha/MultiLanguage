@@ -7,15 +7,13 @@
 //
 
 #import "NSString+multi_language.h"
+#import "LanguageManager.h"
 
 @implementation NSString (multi_language)
 
 - (NSString *)multi{
     
-    if ([self isEqualToString:@"我管理的"]) {
-        
-        return @"managerList";
-    }
-    return self;
+    return [LanguageManager getCurrentLanguageTextWith:self];
 }
+
 @end
