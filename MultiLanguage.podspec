@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MultiLanguage'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of MultiLanguage.'
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/feiduduhaha/MultiLanguage'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'lan_mailbox@163.com'}
+  s.author           = { 'lan_mailbox@163.com' => 'tianyun1201@163.com' }
   s.source           = { :git => 'https://github.com/feiduduhaha/MultiLanguage.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -33,24 +33,24 @@ TODO: Add long description of the pod here.
   s.source_files = 'MultiLanguage/Classes/**/*'
   
   s.resource_bundles = {
-     'Multi_language' => ['Multi_language/Assets/*.png','Multi_language/Files/*.*']
+     'Multi_language' => ['MultiLanguage/Assets/*.png','MultiLanguage/Files/*.*']
   }
-  s.script_phase = { :name => 'multi-languageScript', :script => 'echo "输入当前工作目录"
-    cd ..
-    podsPath=`pwd`
-    shortPath="Multi_language/Resources/"
-    plistPath="${podsPath}/Pods/${shortPath}Config.plist"
-    #echo $plistPath
-    pyScriptPath="${podsPath}/Pods/${shortPath}firstScript.py"
-    #echo $pyScriptPath
-    #pyScriptPath="/Users/silence/Desktop/test.py"
-    #plistPath="/Users/silence/Documents/Dachen_Work/multi_language/Multi_language/Multi_language/Files/Config.plist"
-
-    NeedRunScript=`/usr/libexec/PlistBuddy -c "Print NeedRunScript" $plistPath`
-
-    if [ NeedRunScript ]
-    then
-        echo "执行python脚本"
-        ${pyScriptPath}
-    fi'}
+  s.script_phase = { :name => 'MultiLanguageScript', :script => '
+      podsPath=${BUILT_PRODUCTS_DIR}
+      shortPath="/Multi_language.bundle/"
+      plistPath="${podsPath}/${shortPath}Config.plist"
+      pyScriptPath="${podsPath}/${shortPath}firstScript.py"
+      echo "我的工作目录"
+      cho $podsPath
+      NeedRunScript=`/usr/libexec/PlistBuddy -c "Print NeedRunScript" $plistPath`
+      echo "$NeedRunScript"
+      if [ $NeedRunScript == "true" ]
+      then
+          echo "执行python脚本"
+          ${pyScriptPath}
+      else
+          echo "未获取到配置文件"
+      fi
+    '
+  }
 end

@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>NeedRunScript</key>
-	<false/>
+	<true/>
 </dict>
 </plist>
