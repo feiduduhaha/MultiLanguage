@@ -12,7 +12,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    LanguageManager.languageType = @"en_GB";
+//    LanguageManager.languageType = @"en_GB";
     return YES;
 }
 

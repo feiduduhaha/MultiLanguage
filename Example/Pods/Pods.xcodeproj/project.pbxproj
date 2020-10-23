@@ -7,33 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		016CB868F6625F9DB886088D3790A3BB /* MultiLanguage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8AD0E7240846F076FBBFF8E3EF7C4D5 /* MultiLanguage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		019D7D011EF63CBCFDE61A040D247771 /* Pods-MultiLanguage_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A6DDBB32E88863900E3809592B70423 /* Pods-MultiLanguage_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1AC39AB47CAB1D38869D935705A81045 /* Multi_language.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 40E35ABAC276449E63882886838C22AE /* Multi_language.bundle */; };
-		49416685823AAD39C12DC706E13EE178 /* firstScript.py in Resources */ = {isa = PBXBuildFile; fileRef = 1EBAA486A4DFBE0A8A9F7C7420D79AC2 /* firstScript.py */; };
-		6424A590C30959BC7F4162C4D59D1AFC /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 630C0658997B319B6A3443DFC426C8E3 /* Config.plist */; };
-		666864FA82296D0FFD1978FA706EF447 /* secoundScript.py in Resources */ = {isa = PBXBuildFile; fileRef = 395F2E6ACCD1B4316BBD46365AC6CFAF /* secoundScript.py */; };
+		0BDF28B91569E0C7CC14C4B1D7EBDBAC /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CD210D13EBF2209DF609FDA6E9A84EA /* Config.plist */; };
+		0FD2D2FA2FBFCD0A1BD2835F86C5DC9B /* MultiLanguage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCFB43B67A9B53F9D6B72C1C360B6928 /* MultiLanguage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1365A182493A347DCCF795D3E170726E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		32A1580EC9A4DD17A1983E2D17E1E2B9 /* LanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 307139AA841931AEAFE3152595E969FB /* LanguageManager.m */; };
+		36BE2831660C454423484FADA6437D97 /* UIView+multi_language.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D0725A9FF5E71B481E87F2BECDEB69 /* UIView+multi_language.m */; };
+		3D906076B688A686476EF20B566C4D7F /* NSString+multi_language.h in Headers */ = {isa = PBXBuildFile; fileRef = 1641DF1F76154702495A3E81C26BE90C /* NSString+multi_language.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		458D9F8FDE42A780B50BCA7A8D680753 /* LanguageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D5FFA37910875E52FFC1E5198FEA7F5E /* LanguageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BBBC81D857907E9801410E72628E9D2 /* secoundScript.py in Resources */ = {isa = PBXBuildFile; fileRef = E4B5D2EE681A8A73FB51876223B739A2 /* secoundScript.py */; };
+		5EAC1814A9B5DC4829429C69B0F3BFC8 /* firstScript.py in Resources */ = {isa = PBXBuildFile; fileRef = E30155545A000E48A81EBBF792D20759 /* firstScript.py */; };
+		64210930F2065F4062133001CD7E79D4 /* UIView+multi_language.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B065C70F7A5C5F66B5D416F02C0EEF0 /* UIView+multi_language.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6966806ADE8047A25982EF6CBFA06A16 /* Pods-MultiLanguage_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E27781F5A3430A9F59B56A9F067B33 /* Pods-MultiLanguage_Example-dummy.m */; };
-		81AFB3B4E5B9FBD0CBEA48C5994A42A2 /* NSString+multi_language.h in Headers */ = {isa = PBXBuildFile; fileRef = 63BB22D72E30229675A19601AE8BF96A /* NSString+multi_language.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84E11357B4A995177BECCB14C7679185 /* Multi_language.h in Headers */ = {isa = PBXBuildFile; fileRef = E2BE411B48ECD17D34C3C4E37AAD1F6C /* Multi_language.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		905B6A93FEC6621A95CEA59064F4356E /* UIView+multi_language.h in Headers */ = {isa = PBXBuildFile; fileRef = BD3DD8E5858E89D3B67A25CD1E5263C0 /* UIView+multi_language.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC038686217CB020A8333D7D0D8D3AC9 /* UIView+multi_language.m in Sources */ = {isa = PBXBuildFile; fileRef = F835BED443CE31B8A70683726F51BEF5 /* UIView+multi_language.m */; };
-		AE2FDCDBDE068792E564215C2AEBE9AE /* NSString+multi_language.m in Sources */ = {isa = PBXBuildFile; fileRef = 498B6537D8A25DC6CDF1CBC880094492 /* NSString+multi_language.m */; };
 		BB9E7EB58BD469608C55CAE30368E071 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		DC4BB7A77CB54421EDC242CC99A35CB2 /* MultiLanguage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFE7BFB7DF2DF7D9FAF2EC3D3F3AE7 /* MultiLanguage-dummy.m */; };
-		DCCC12F6E4B7AFA0C4FB062C0BE31210 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		E8F9CB6525418A290055F186 /* LanguageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E8F9CB6325418A290055F186 /* LanguageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8F9CB6625418A290055F186 /* LanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F9CB6425418A290055F186 /* LanguageManager.m */; };
+		CBA67F4EBC184866F14039504E571355 /* NSString+multi_language.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B709ADE898A7D8359431AF25186A8B /* NSString+multi_language.m */; };
+		F324F9763CE0FB403FB04CA7565C139B /* MultiLanguage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC2AE21B917DBB253F7CD8671A9ECF /* MultiLanguage-dummy.m */; };
+		F396430B019A9802278C4FBF75485FAE /* Multi_language.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7CC02D5336D4DB602BB02FD83BA922 /* Multi_language.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD6979650B3104C38D1A0DF9E2924352 /* Multi_language.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 40E35ABAC276449E63882886838C22AE /* Multi_language.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3035BC583E6AA7AC2B4FB36D2CDE0762 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E50E683FB2AC01722B017F09798EE987;
-			remoteInfo = "MultiLanguage-Multi_language";
-		};
 		93077F05FEEEF677E719985B7E1835E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -41,59 +34,58 @@
 			remoteGlobalIDString = DD4ED43A94DBB374A1A63CFACEDDD046;
 			remoteInfo = MultiLanguage;
 		};
+		9CA8FCF71CB5CC4BB74E557D9EA6F045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E50E683FB2AC01722B017F09798EE987;
+			remoteInfo = "MultiLanguage-Multi_language";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0B1A63EFFE1A171F73EFE391042EDBE7 /* Pods-MultiLanguage_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MultiLanguage_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		183DAFBB48F03320B2534DCAEAAE43E6 /* MultiLanguage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MultiLanguage.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1641DF1F76154702495A3E81C26BE90C /* NSString+multi_language.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+multi_language.h"; path = "MultiLanguage/Classes/NSString+multi_language.h"; sourceTree = "<group>"; };
 		1A6DDBB32E88863900E3809592B70423 /* Pods-MultiLanguage_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MultiLanguage_Example-umbrella.h"; sourceTree = "<group>"; };
-		1EBAA486A4DFBE0A8A9F7C7420D79AC2 /* firstScript.py */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.python; name = firstScript.py; path = MultiLanguage/Files/firstScript.py; sourceTree = "<group>"; };
-		2989EF02437FCC616013448BE12BC3F8 /* ResourceBundle-Multi_language-MultiLanguage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Multi_language-MultiLanguage-Info.plist"; sourceTree = "<group>"; };
+		1B065C70F7A5C5F66B5D416F02C0EEF0 /* UIView+multi_language.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+multi_language.h"; path = "MultiLanguage/Classes/UIView+multi_language.h"; sourceTree = "<group>"; };
+		2CD210D13EBF2209DF609FDA6E9A84EA /* Config.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Config.plist; path = MultiLanguage/Files/Config.plist; sourceTree = "<group>"; };
+		307139AA841931AEAFE3152595E969FB /* LanguageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LanguageManager.m; path = MultiLanguage/Classes/LanguageManager.m; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		395F2E6ACCD1B4316BBD46365AC6CFAF /* secoundScript.py */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.python; name = secoundScript.py; path = MultiLanguage/Files/secoundScript.py; sourceTree = "<group>"; };
-		40E35ABAC276449E63882886838C22AE /* Multi_language.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Multi_language.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		393DF786A1DF0CC9F71FDE11289A0BB3 /* MultiLanguage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MultiLanguage.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3E2DB3C0182AC1AE6AB0287BEBAD2411 /* MultiLanguage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MultiLanguage-Info.plist"; sourceTree = "<group>"; };
+		40E35ABAC276449E63882886838C22AE /* Multi_language.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Multi_language.bundle; path = "MultiLanguage-Multi_language.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B709ADE898A7D8359431AF25186A8B /* NSString+multi_language.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+multi_language.m"; path = "MultiLanguage/Classes/NSString+multi_language.m"; sourceTree = "<group>"; };
 		45E27781F5A3430A9F59B56A9F067B33 /* Pods-MultiLanguage_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MultiLanguage_Example-dummy.m"; sourceTree = "<group>"; };
-		498B6537D8A25DC6CDF1CBC880094492 /* NSString+multi_language.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+multi_language.m"; path = "MultiLanguage/Classes/NSString+multi_language.m"; sourceTree = "<group>"; };
-		59BF82AFE68459DBC99DD46CCA386DB0 /* MultiLanguage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MultiLanguage-Info.plist"; sourceTree = "<group>"; };
-		630C0658997B319B6A3443DFC426C8E3 /* Config.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Config.plist; path = MultiLanguage/Files/Config.plist; sourceTree = "<group>"; };
-		63BB22D72E30229675A19601AE8BF96A /* NSString+multi_language.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+multi_language.h"; path = "MultiLanguage/Classes/NSString+multi_language.h"; sourceTree = "<group>"; };
-		6CFFE7BFB7DF2DF7D9FAF2EC3D3F3AE7 /* MultiLanguage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MultiLanguage-dummy.m"; sourceTree = "<group>"; };
-		70B5E039CCB015CADD8DBC406E4017F0 /* MultiLanguage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiLanguage-prefix.pch"; sourceTree = "<group>"; };
-		78B4564C898F1B1AE6C043F7CC856AA9 /* Pods_MultiLanguage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiLanguage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EDC2AE21B917DBB253F7CD8671A9ECF /* MultiLanguage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MultiLanguage-dummy.m"; sourceTree = "<group>"; };
+		5F3F22A8F2559367EA07199E614A7445 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6AB89B86C3D675CE3EEC39D226759C10 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		78B4564C898F1B1AE6C043F7CC856AA9 /* Pods_MultiLanguage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MultiLanguage_Example.framework; path = "Pods-MultiLanguage_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B24A121F41A571C93BAC872ACCA3241 /* Pods-MultiLanguage_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MultiLanguage_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		8192B747CBC49DF5E7C4EFED978F6259 /* MultiLanguage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MultiLanguage.modulemap; sourceTree = "<group>"; };
 		88551DEA7125990FF78AE2B13EB6C9D5 /* Pods-MultiLanguage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MultiLanguage_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8FE6757B06027CF5511BE4015505CFA1 /* MultiLanguage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiLanguage.release.xcconfig; sourceTree = "<group>"; };
-		986C0F8FCA88A4B358489A551784B7F8 /* MultiLanguage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiLanguage.debug.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BC4C54EB193DB8D3034305BBBA805439 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		BD3DD8E5858E89D3B67A25CD1E5263C0 /* UIView+multi_language.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+multi_language.h"; path = "MultiLanguage/Classes/UIView+multi_language.h"; sourceTree = "<group>"; };
-		BF4D0772B59867F36C5F7DA8B49A8978 /* MultiLanguage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiLanguage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93137CBA32F9CE2B616C4C76FB47991F /* MultiLanguage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiLanguage.debug.xcconfig; sourceTree = "<group>"; };
+		9A214971F6D97A07858CCF1A6D995215 /* MultiLanguage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiLanguage-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7461B75D63804E6599BC54D7EAEA6DD /* MultiLanguage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiLanguage.release.xcconfig; sourceTree = "<group>"; };
+		BCFB43B67A9B53F9D6B72C1C360B6928 /* MultiLanguage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiLanguage-umbrella.h"; sourceTree = "<group>"; };
+		BF4D0772B59867F36C5F7DA8B49A8978 /* MultiLanguage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MultiLanguage.framework; path = MultiLanguage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBABBE4E9CE07A3D5F2BA239916251D6 /* Pods-MultiLanguage_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MultiLanguage_Example-Info.plist"; sourceTree = "<group>"; };
+		CD7CC02D5336D4DB602BB02FD83BA922 /* Multi_language.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Multi_language.h; path = MultiLanguage/Classes/Multi_language.h; sourceTree = "<group>"; };
+		D0C0389E42F159AF92C16ED638B42603 /* ResourceBundle-Multi_language-MultiLanguage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Multi_language-MultiLanguage-Info.plist"; sourceTree = "<group>"; };
+		D2D0725A9FF5E71B481E87F2BECDEB69 /* UIView+multi_language.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+multi_language.m"; path = "MultiLanguage/Classes/UIView+multi_language.m"; sourceTree = "<group>"; };
+		D5FFA37910875E52FFC1E5198FEA7F5E /* LanguageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LanguageManager.h; path = MultiLanguage/Classes/LanguageManager.h; sourceTree = "<group>"; };
 		E174C826048D6E6C8DBB8F5052E9C1D3 /* Pods-MultiLanguage_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MultiLanguage_Example.modulemap"; sourceTree = "<group>"; };
 		E217519DE20C1AFAE1EECF538134FD03 /* Pods-MultiLanguage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MultiLanguage_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E2BE411B48ECD17D34C3C4E37AAD1F6C /* Multi_language.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Multi_language.h; path = MultiLanguage/Classes/Multi_language.h; sourceTree = "<group>"; };
-		E8F9CB6325418A290055F186 /* LanguageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LanguageManager.h; path = MultiLanguage/Classes/LanguageManager.h; sourceTree = "<group>"; };
-		E8F9CB6425418A290055F186 /* LanguageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LanguageManager.m; path = MultiLanguage/Classes/LanguageManager.m; sourceTree = "<group>"; };
+		E30155545A000E48A81EBBF792D20759 /* firstScript.py */ = {isa = PBXFileReference; includeInIndex = 1; name = firstScript.py; path = MultiLanguage/Files/firstScript.py; sourceTree = "<group>"; };
+		E4B5D2EE681A8A73FB51876223B739A2 /* secoundScript.py */ = {isa = PBXFileReference; includeInIndex = 1; name = secoundScript.py; path = MultiLanguage/Files/secoundScript.py; sourceTree = "<group>"; };
+		EBE24E0F66C28B7526AE9F077D173342 /* MultiLanguage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MultiLanguage.modulemap; sourceTree = "<group>"; };
 		F7E803452596CEEE1D5E3CEA95CC9550 /* Pods-MultiLanguage_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MultiLanguage_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F835BED443CE31B8A70683726F51BEF5 /* UIView+multi_language.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+multi_language.m"; path = "MultiLanguage/Classes/UIView+multi_language.m"; sourceTree = "<group>"; };
-		F85E75228AC792B7082C040A318BCE9D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		F8AD0E7240846F076FBBFF8E3EF7C4D5 /* MultiLanguage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiLanguage-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6B9C83907CB9DC736EFEAB9442B4A37D /* Frameworks */ = {
+		C0A398B09BD74D597CCCF9A32289997D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A85571C715FF34B6D0D37FF98BDFDCB0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DCCC12F6E4B7AFA0C4FB062C0BE31210 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +94,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB9E7EB58BD469608C55CAE30368E071 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9A7634FD8E1628A5F9AAF30D2EAFCBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1365A182493A347DCCF795D3E170726E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,54 +118,46 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0823C8441289AAFA98E43EE4A2F2799D /* Resources */ = {
+		13BBC8089F511264418CA8CDDC0C0B80 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				630C0658997B319B6A3443DFC426C8E3 /* Config.plist */,
-				1EBAA486A4DFBE0A8A9F7C7420D79AC2 /* firstScript.py */,
-				395F2E6ACCD1B4316BBD46365AC6CFAF /* secoundScript.py */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		54B4ABFBBBD2DA5760CF209459D700B4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8192B747CBC49DF5E7C4EFED978F6259 /* MultiLanguage.modulemap */,
-				6CFFE7BFB7DF2DF7D9FAF2EC3D3F3AE7 /* MultiLanguage-dummy.m */,
-				59BF82AFE68459DBC99DD46CCA386DB0 /* MultiLanguage-Info.plist */,
-				70B5E039CCB015CADD8DBC406E4017F0 /* MultiLanguage-prefix.pch */,
-				F8AD0E7240846F076FBBFF8E3EF7C4D5 /* MultiLanguage-umbrella.h */,
-				986C0F8FCA88A4B358489A551784B7F8 /* MultiLanguage.debug.xcconfig */,
-				8FE6757B06027CF5511BE4015505CFA1 /* MultiLanguage.release.xcconfig */,
-				2989EF02437FCC616013448BE12BC3F8 /* ResourceBundle-Multi_language-MultiLanguage-Info.plist */,
+				EBE24E0F66C28B7526AE9F077D173342 /* MultiLanguage.modulemap */,
+				5EDC2AE21B917DBB253F7CD8671A9ECF /* MultiLanguage-dummy.m */,
+				3E2DB3C0182AC1AE6AB0287BEBAD2411 /* MultiLanguage-Info.plist */,
+				9A214971F6D97A07858CCF1A6D995215 /* MultiLanguage-prefix.pch */,
+				BCFB43B67A9B53F9D6B72C1C360B6928 /* MultiLanguage-umbrella.h */,
+				93137CBA32F9CE2B616C4C76FB47991F /* MultiLanguage.debug.xcconfig */,
+				A7461B75D63804E6599BC54D7EAEA6DD /* MultiLanguage.release.xcconfig */,
+				D0C0389E42F159AF92C16ED638B42603 /* ResourceBundle-Multi_language-MultiLanguage-Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/MultiLanguage";
 			sourceTree = "<group>";
 		};
-		566F6D2598380D824D554A5560172DEE /* MultiLanguage */ = {
+		2F08F27D68897A08572937A07BD67FB0 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				E2BE411B48ECD17D34C3C4E37AAD1F6C /* Multi_language.h */,
-				E8F9CB6325418A290055F186 /* LanguageManager.h */,
-				E8F9CB6425418A290055F186 /* LanguageManager.m */,
-				63BB22D72E30229675A19601AE8BF96A /* NSString+multi_language.h */,
-				498B6537D8A25DC6CDF1CBC880094492 /* NSString+multi_language.m */,
-				BD3DD8E5858E89D3B67A25CD1E5263C0 /* UIView+multi_language.h */,
-				F835BED443CE31B8A70683726F51BEF5 /* UIView+multi_language.m */,
-				F7760CAC18C8230A736A70AB0252BBAB /* Pod */,
-				0823C8441289AAFA98E43EE4A2F2799D /* Resources */,
-				54B4ABFBBBD2DA5760CF209459D700B4 /* Support Files */,
+				5F3F22A8F2559367EA07199E614A7445 /* LICENSE */,
+				393DF786A1DF0CC9F71FDE11289A0BB3 /* MultiLanguage.podspec */,
+				6AB89B86C3D675CE3EEC39D226759C10 /* README.md */,
 			);
-			name = MultiLanguage;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		5F0E0B67596F3F96CBC3F01C4B34E091 /* Development Pods */ = {
+		40E6EBCF7E3B7708077CA7C6DAE7BEE8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				566F6D2598380D824D554A5560172DEE /* MultiLanguage */,
+				2CD210D13EBF2209DF609FDA6E9A84EA /* Config.plist */,
+				E30155545A000E48A81EBBF792D20759 /* firstScript.py */,
+				E4B5D2EE681A8A73FB51876223B739A2 /* secoundScript.py */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		47F0FBABE70AA7CFDBEBDAF59AFDA790 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F16E6A8188FCE55A16EE8DA099C97F0B /* MultiLanguage */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -199,7 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				5F0E0B67596F3F96CBC3F01C4B34E091 /* Development Pods */,
+				47F0FBABE70AA7CFDBEBDAF59AFDA790 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				07B87E2344F129751D5061FE0F1C42C2 /* Products */,
 				D8B505BD8488675E1604D04ADA0DC30E /* Targets Support Files */,
@@ -222,28 +214,36 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F7760CAC18C8230A736A70AB0252BBAB /* Pod */ = {
+		F16E6A8188FCE55A16EE8DA099C97F0B /* MultiLanguage */ = {
 			isa = PBXGroup;
 			children = (
-				F85E75228AC792B7082C040A318BCE9D /* LICENSE */,
-				183DAFBB48F03320B2534DCAEAAE43E6 /* MultiLanguage.podspec */,
-				BC4C54EB193DB8D3034305BBBA805439 /* README.md */,
+				D5FFA37910875E52FFC1E5198FEA7F5E /* LanguageManager.h */,
+				307139AA841931AEAFE3152595E969FB /* LanguageManager.m */,
+				CD7CC02D5336D4DB602BB02FD83BA922 /* Multi_language.h */,
+				1641DF1F76154702495A3E81C26BE90C /* NSString+multi_language.h */,
+				41B709ADE898A7D8359431AF25186A8B /* NSString+multi_language.m */,
+				1B065C70F7A5C5F66B5D416F02C0EEF0 /* UIView+multi_language.h */,
+				D2D0725A9FF5E71B481E87F2BECDEB69 /* UIView+multi_language.m */,
+				2F08F27D68897A08572937A07BD67FB0 /* Pod */,
+				40E6EBCF7E3B7708077CA7C6DAE7BEE8 /* Resources */,
+				13BBC8089F511264418CA8CDDC0C0B80 /* Support Files */,
 			);
-			name = Pod;
+			name = MultiLanguage;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B5B9B654297D4CE057CA261878DBD935 /* Headers */ = {
+		C69F014E8F66068B26C3586815D76A52 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84E11357B4A995177BECCB14C7679185 /* Multi_language.h in Headers */,
-				E8F9CB6525418A290055F186 /* LanguageManager.h in Headers */,
-				016CB868F6625F9DB886088D3790A3BB /* MultiLanguage-umbrella.h in Headers */,
-				81AFB3B4E5B9FBD0CBEA48C5994A42A2 /* NSString+multi_language.h in Headers */,
-				905B6A93FEC6621A95CEA59064F4356E /* UIView+multi_language.h in Headers */,
+				458D9F8FDE42A780B50BCA7A8D680753 /* LanguageManager.h in Headers */,
+				F396430B019A9802278C4FBF75485FAE /* Multi_language.h in Headers */,
+				0FD2D2FA2FBFCD0A1BD2835F86C5DC9B /* MultiLanguage-umbrella.h in Headers */,
+				3D906076B688A686476EF20B566C4D7F /* NSString+multi_language.h in Headers */,
+				64210930F2065F4062133001CD7E79D4 /* UIView+multi_language.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,18 +279,18 @@
 		};
 		DD4ED43A94DBB374A1A63CFACEDDD046 /* MultiLanguage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE8D677B4542A7891CD00F33E46F21E9 /* Build configuration list for PBXNativeTarget "MultiLanguage" */;
+			buildConfigurationList = 2E4BCF9FFF868527BB806EC97928CAC6 /* Build configuration list for PBXNativeTarget "MultiLanguage" */;
 			buildPhases = (
-				B5B9B654297D4CE057CA261878DBD935 /* Headers */,
-				34623D1001A97910916CCE9301DDE71B /* Sources */,
-				A85571C715FF34B6D0D37FF98BDFDCB0 /* Frameworks */,
-				C9215FBC1A3FFF682B76D172120A0E80 /* Resources */,
-				D5EA2DC9B353FEF396A0AF635CB424D3 /* [CP-User] MultiLanguageScript */,
+				C69F014E8F66068B26C3586815D76A52 /* Headers */,
+				ED0E1BC7B150B090385B47C249083AE3 /* Sources */,
+				D9A7634FD8E1628A5F9AAF30D2EAFCBC /* Frameworks */,
+				8AF0918F1EC8251265D034DF894BFED6 /* Resources */,
+				BDE10BCA1EE25D7AD1FAAC3CB9B23B4F /* [CP-User] MultiLanguageScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DE5119F4B4ECD864531EADE804590F8E /* PBXTargetDependency */,
+				76E0716180784D0AAB5A1A2CA47185CA /* PBXTargetDependency */,
 			);
 			name = MultiLanguage;
 			productName = MultiLanguage;
@@ -299,11 +299,11 @@
 		};
 		E50E683FB2AC01722B017F09798EE987 /* MultiLanguage-Multi_language */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2DB164E28B30BF2E947B5E2E2A584BE0 /* Build configuration list for PBXNativeTarget "MultiLanguage-Multi_language" */;
+			buildConfigurationList = 61FFAA688FB95DF21E6791B78F07E457 /* Build configuration list for PBXNativeTarget "MultiLanguage-Multi_language" */;
 			buildPhases = (
-				89E3FC54A710B351590EFD8088E58444 /* Sources */,
-				6B9C83907CB9DC736EFEAB9442B4A37D /* Frameworks */,
-				ECBBD7DA1000BCAEB243B01E528B0C85 /* Resources */,
+				6F8182DCFD9E7C90188A8866C2A6B242 /* Sources */,
+				C0A398B09BD74D597CCCF9A32289997D /* Frameworks */,
+				85DAA0CE8AD453875036B94A871529EB /* Resources */,
 			);
 			buildRules = (
 			);
@@ -351,28 +351,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9215FBC1A3FFF682B76D172120A0E80 /* Resources */ = {
+		85DAA0CE8AD453875036B94A871529EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AC39AB47CAB1D38869D935705A81045 /* Multi_language.bundle in Resources */,
+				0BDF28B91569E0C7CC14C4B1D7EBDBAC /* Config.plist in Resources */,
+				5EAC1814A9B5DC4829429C69B0F3BFC8 /* firstScript.py in Resources */,
+				4BBBC81D857907E9801410E72628E9D2 /* secoundScript.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ECBBD7DA1000BCAEB243B01E528B0C85 /* Resources */ = {
+		8AF0918F1EC8251265D034DF894BFED6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6424A590C30959BC7F4162C4D59D1AFC /* Config.plist in Resources */,
-				49416685823AAD39C12DC706E13EE178 /* firstScript.py in Resources */,
-				666864FA82296D0FFD1978FA706EF447 /* secoundScript.py in Resources */,
+				FD6979650B3104C38D1A0DF9E2924352 /* Multi_language.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D5EA2DC9B353FEF396A0AF635CB424D3 /* [CP-User] MultiLanguageScript */ = {
+		BDE10BCA1EE25D7AD1FAAC3CB9B23B4F /* [CP-User] MultiLanguageScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,23 +380,12 @@
 			name = "[CP-User] MultiLanguageScript";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\n      podsPath=${BUILT_PRODUCTS_DIR}\n      shortPath=\"/Multi_language.bundle/\"\n      plistPath=\"${podsPath}/${shortPath}Config.plist\"\n      pyScriptPath=\"${podsPath}/${shortPath}firstScript.py\"\n      echo \"我的工作目录\"\n      cho $podsPath\n      NeedRunScript=`/usr/libexec/PlistBuddy -c \"Print NeedRunScript\" $plistPath`\n      echo \"$NeedRunScript\"\n      if [ $NeedRunScript == \"true\" ]\n      then\n          echo \"执行python脚本\"\n          ${pyScriptPath}\n      else\n          echo \"未获取到配置文件\"\n      fi\n    \n";
+			shellScript = "\n      \n      echo \"\\n**********************判断是否需要执行多语言python脚本*********************************\"\n      \n      podsPath=${BUILT_PRODUCTS_DIR}\n      shortPath=\"/Multi_language.bundle/\"\n      plistPath=\"${podsPath}/${shortPath}Config.plist\"\n      filterScriptPath=\"${podsPath}/${shortPath}firstScript.py\"\n      transScriptPath=\"${podsPath}/${shortPath}secoundScript.py\"\n      \n      echo \"我的工作目录\"\n      cho $podsPath\n      \n      RunFilterScript=`/usr/libexec/PlistBuddy -c \"Print RunFilterScript\" $plistPath`\n      echo \"$RunFilterScript\"\n      if [ $RunFilterScript == \"true\" ]\n      then\n          echo \"执行过滤脚本，生成csv文件\"\n          ${filterScriptPath}\n      else\n          echo \"不需要执行过滤脚本\"\n      fi\n      \n      RunScvToJsonScScript=`/usr/libexec/PlistBuddy -c \"Print RunScvToJsonScScript\" $plistPath`\n      echo \"$RunScvToJsonScScript\"\n      if [ $RunScvToJsonScScript == \"true\" ]\n      then\n          echo \"执行转换csv到json脚本\"\n          ${transScriptPath}\n      else\n          echo \"不需要转换脚本\"\n      fi\n      echo \"\\n**********************MultiLanguage全部脚本运行完毕*********************************\\n\"\n    ";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		34623D1001A97910916CCE9301DDE71B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC4BB7A77CB54421EDC242CC99A35CB2 /* MultiLanguage-dummy.m in Sources */,
-				AE2FDCDBDE068792E564215C2AEBE9AE /* NSString+multi_language.m in Sources */,
-				AC038686217CB020A8333D7D0D8D3AC9 /* UIView+multi_language.m in Sources */,
-				E8F9CB6625418A290055F186 /* LanguageManager.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89E3FC54A710B351590EFD8088E58444 /* Sources */ = {
+		6F8182DCFD9E7C90188A8866C2A6B242 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -411,14 +400,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ED0E1BC7B150B090385B47C249083AE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A1580EC9A4DD17A1983E2D17E1E2B9 /* LanguageManager.m in Sources */,
+				F324F9763CE0FB403FB04CA7565C139B /* MultiLanguage-dummy.m in Sources */,
+				CBA67F4EBC184866F14039504E571355 /* NSString+multi_language.m in Sources */,
+				36BE2831660C454423484FADA6437D97 /* UIView+multi_language.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DE5119F4B4ECD864531EADE804590F8E /* PBXTargetDependency */ = {
+		76E0716180784D0AAB5A1A2CA47185CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "MultiLanguage-Multi_language";
 			target = E50E683FB2AC01722B017F09798EE987 /* MultiLanguage-Multi_language */;
-			targetProxy = 3035BC583E6AA7AC2B4FB36D2CDE0762 /* PBXContainerItemProxy */;
+			targetProxy = 9CA8FCF71CB5CC4BB74E557D9EA6F045 /* PBXContainerItemProxy */;
 		};
 		EE605E75B63114D8811075DF9FA35B0E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -429,6 +429,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		20569CBCBE66165DD01922C62C342C6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7461B75D63804E6599BC54D7EAEA6DD /* MultiLanguage.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MultiLanguage/MultiLanguage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MultiLanguage/MultiLanguage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MultiLanguage/MultiLanguage.modulemap";
+				PRODUCT_MODULE_NAME = MultiLanguage;
+				PRODUCT_NAME = MultiLanguage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		27F80EC2890F7DB9A40A8A510D7D79A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 88551DEA7125990FF78AE2B13EB6C9D5 /* Pods-MultiLanguage_Example.debug.xcconfig */;
@@ -461,38 +493,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		36B1BB86FD0A40946B0641DE0C42CA64 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FE6757B06027CF5511BE4015505CFA1 /* MultiLanguage.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MultiLanguage/MultiLanguage-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MultiLanguage/MultiLanguage-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MultiLanguage/MultiLanguage.modulemap";
-				PRODUCT_MODULE_NAME = MultiLanguage;
-				PRODUCT_NAME = MultiLanguage;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -547,7 +547,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -651,9 +652,9 @@
 			};
 			name = Debug;
 		};
-		846C4F7A571F01987578A0240B5F6171 /* Debug */ = {
+		998A686AD4CFA6C099B9A1D9F3C6E9BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 986C0F8FCA88A4B358489A551784B7F8 /* MultiLanguage.debug.xcconfig */;
+			baseConfigurationReference = 93137CBA32F9CE2B616C4C76FB47991F /* MultiLanguage.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -682,9 +683,9 @@
 			};
 			name = Debug;
 		};
-		C4EA48048367AFA76E1D4DF4F3BB13CC /* Debug */ = {
+		9E6DD68AE21DD0155F666BFFA51ADA50 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 986C0F8FCA88A4B358489A551784B7F8 /* MultiLanguage.debug.xcconfig */;
+			baseConfigurationReference = 93137CBA32F9CE2B616C4C76FB47991F /* MultiLanguage.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MultiLanguage";
@@ -699,9 +700,9 @@
 			};
 			name = Debug;
 		};
-		DFDC6B7DFC46DBF8F554067B3E15ADEC /* Release */ = {
+		C6A835D291D523698E97C86CB495C8DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FE6757B06027CF5511BE4015505CFA1 /* MultiLanguage.release.xcconfig */;
+			baseConfigurationReference = A7461B75D63804E6599BC54D7EAEA6DD /* MultiLanguage.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MultiLanguage";
@@ -719,11 +720,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2DB164E28B30BF2E947B5E2E2A584BE0 /* Build configuration list for PBXNativeTarget "MultiLanguage-Multi_language" */ = {
+		2E4BCF9FFF868527BB806EC97928CAC6 /* Build configuration list for PBXNativeTarget "MultiLanguage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C4EA48048367AFA76E1D4DF4F3BB13CC /* Debug */,
-				DFDC6B7DFC46DBF8F554067B3E15ADEC /* Release */,
+				998A686AD4CFA6C099B9A1D9F3C6E9BA /* Debug */,
+				20569CBCBE66165DD01922C62C342C6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -746,11 +747,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE8D677B4542A7891CD00F33E46F21E9 /* Build configuration list for PBXNativeTarget "MultiLanguage" */ = {
+		61FFAA688FB95DF21E6791B78F07E457 /* Build configuration list for PBXNativeTarget "MultiLanguage-Multi_language" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				846C4F7A571F01987578A0240B5F6171 /* Debug */,
-				36B1BB86FD0A40946B0641DE0C42CA64 /* Release */,
+				9E6DD68AE21DD0155F666BFFA51ADA50 /* Debug */,
+				C6A835D291D523698E97C86CB495C8DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

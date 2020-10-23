@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MultiLanguage'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A short description of MultiLanguage.'
 
 # This description is used to generate tags and improve search results.
@@ -36,21 +36,38 @@ TODO: Add long description of the pod here.
      'Multi_language' => ['MultiLanguage/Assets/*.png','MultiLanguage/Files/*.*']
   }
   s.script_phase = { :name => 'MultiLanguageScript', :script => '
+      
+      echo "\n**********************判断是否需要执行多语言python脚本*********************************"
+      
       podsPath=${BUILT_PRODUCTS_DIR}
       shortPath="/Multi_language.bundle/"
       plistPath="${podsPath}/${shortPath}Config.plist"
-      pyScriptPath="${podsPath}/${shortPath}firstScript.py"
+      filterScriptPath="${podsPath}/${shortPath}firstScript.py"
+      transScriptPath="${podsPath}/${shortPath}secoundScript.py"
+      
       echo "我的工作目录"
       cho $podsPath
-      NeedRunScript=`/usr/libexec/PlistBuddy -c "Print NeedRunScript" $plistPath`
-      echo "$NeedRunScript"
-      if [ $NeedRunScript == "true" ]
+      
+      RunFilterScript=`/usr/libexec/PlistBuddy -c "Print RunFilterScript" $plistPath`
+      echo "$RunFilterScript"
+      if [ $RunFilterScript == "true" ]
       then
-          echo "执行python脚本"
-          ${pyScriptPath}
+          echo "执行过滤脚本，生成csv文件"
+          ${filterScriptPath}
       else
-          echo "未获取到配置文件"
+          echo "不需要执行过滤脚本"
       fi
+      
+      RunScvToJsonScScript=`/usr/libexec/PlistBuddy -c "Print RunScvToJsonScScript" $plistPath`
+      echo "$RunScvToJsonScScript"
+      if [ $RunScvToJsonScScript == "true" ]
+      then
+          echo "执行转换csv到json脚本"
+          ${transScriptPath}
+      else
+          echo "不需要转换脚本"
+      fi
+      echo "\n**********************MultiLanguage全部脚本运行完毕************************************\n"
     '
   }
 end

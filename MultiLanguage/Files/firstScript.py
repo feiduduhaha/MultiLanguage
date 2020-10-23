@@ -5,13 +5,13 @@ import re
 import csv
 from tkinter import filedialog
 
-TK_SILENCE_DEPRECATION=1
+print("\n*****************执行过滤过程中的中文字符串添加'.multi'后缀，并生成映射表格的脚本**********************\n")
 # 请求选择文件夹/目录
 answer = filedialog.askdirectory(initialdir=os.getcwd(), title="选择需要过滤的目录")
 workPath = answer + '/'
 print(workPath)
 if len(workPath) == 0:
-    print("\n未选择目录，脚本停止运行")
+    print("未选择目录，脚本停止运行")
     sys.exit(0)
     
 # 获取文件的内容
@@ -30,7 +30,7 @@ def get_contends_arr(contends):
 
 if os.path.isdir(workPath):
 
-    print("\n开始匹配" + workPath + " 下的文件\n")
+    print("开始匹配" + workPath + " 下的文件")
 else:
     sys.exit(0)
 
@@ -83,6 +83,6 @@ for filePath in needHandleFilesArr:#循环文件
 
 # 5. 关闭文件
 csvFile.close()
-print ("\n处理完毕生成scv表格文件" + "\n")
-print ("\n************************************************************************\n   过滤脚本执行完毕，将桌面上的表格发给产品翻译，并核对git变动记录\n************************************************************************\n")
+print ("处理完毕生成scv表格文件")
+print ("\n*****************过滤脚本执行完毕，翻译桌面上的multi-language.csv，并核对git变动记录****************************************\n")
 sys.exit(0)

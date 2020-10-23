@@ -1,5 +1,5 @@
 PODS:
-  - MultiLanguage (0.1.0)
+  - MultiLanguage (1.0.1)
 
 DEPENDENCIES:
   - MultiLanguage (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MultiLanguage: 5bb3cc9a41fcdcbe0f00f461bfc9b882dbf693c1
+  MultiLanguage: 57595f0627c56f910a650e74b4285746681affcb
 
 PODFILE CHECKSUM: 4c6e94975f92fcf06ee3d146c6fcee8a34d0deb3
 
