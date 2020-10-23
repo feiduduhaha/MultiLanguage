@@ -19,7 +19,8 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'MultiLanguage'
 ```
-
+## 使用方法
+[weak简书链接^_^](https://www.jianshu.com/p/fe06293333b7)
 ## Author
 
 lan_mailbox@163.com, tianyun1201@163.com
