@@ -35,11 +35,17 @@ static NSDictionary *_languageDic = nil;
         NSString *jsonStr  = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&err];
         if (err) {
             NSLog(@"\n********************\n获取json多语言配置文件失败\n********************\n");
-        }
-        NSData *jaonData   = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
-        _languageDic = [NSJSONSerialization JSONObjectWithData:jaonData options:NSJSONReadingMutableContainers error:&err];
-        if (err) {
-            NSLog(@"\n********************\n多语言配置文件解析失败\n********************\n");
+            
+        }else{
+            
+            NSData *jaonData   = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
+            if (jaonData) {
+                
+                _languageDic = [NSJSONSerialization JSONObjectWithData:jaonData options:NSJSONReadingMutableContainers error:&err];
+                if (err) {
+                    NSLog(@"\n********************\n多语言配置文件解析失败\n********************\n");
+                }
+            }
         }
     }
     NSString * keyStr = [NSString stringWithFormat:@"%@%@%@",@"@\"",oriStr,@"\""];

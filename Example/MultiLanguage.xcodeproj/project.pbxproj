@@ -23,7 +23,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		E8F9CB7725418F770055F186 /* multi-language.json in Resources */ = {isa = PBXBuildFile; fileRef = E8F9CB7625418F770055F186 /* multi-language.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +63,6 @@
 		B0D650D2D630AE9190663A8D /* Pods-MultiLanguage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiLanguage_Example.release.xcconfig"; path = "Target Support Files/Pods-MultiLanguage_Example/Pods-MultiLanguage_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DCCF7CD871E0F246779E2431 /* Pods-MultiLanguage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiLanguage_Example.debug.xcconfig"; path = "Target Support Files/Pods-MultiLanguage_Example/Pods-MultiLanguage_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E0451E78A8FB20A99D0016FF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		E8F9CB7625418F770055F186 /* multi-language.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "multi-language.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +138,6 @@
 				6003F59C195388D20070C39A /* MULTIAppDelegate.h */,
 				6003F59D195388D20070C39A /* MULTIAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				E8F9CB7625418F770055F186 /* multi-language.json */,
 				6003F5A5195388D20070C39A /* MULTIViewController.h */,
 				6003F5A6195388D20070C39A /* MULTIViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -271,7 +268,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8F9CB7725418F770055F186 /* multi-language.json in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
