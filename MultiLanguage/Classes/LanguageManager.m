@@ -28,29 +28,39 @@ static NSDictionary *_languageDic = nil;
 
 + (NSString *)getCurrentLanguageTextWith:(NSString *)oriStr{
     
-    if (!_languageDic) {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
         
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"multi-language" ofType:@"json"];
-        NSError * err= nil;
-        NSString *jsonStr  = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&err];
-        if (err) {
-            NSLog(@"\n********************\n获取json多语言配置文件失败\n********************\n");
+        if (!_languageDic) {
             
-        }else{
-            
-            NSData *jaonData   = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
-            if (jaonData) {
+            NSString *filePath = [[NSBundle mainBundle] pathForResource:@"multi-language" ofType:@"json"];
+            NSError * err = nil;
+            NSString *jsonStr = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&err];
+            if (err) {
                 
-                _languageDic = [NSJSONSerialization JSONObjectWithData:jaonData options:NSJSONReadingMutableContainers error:&err];
-                if (err) {
-                    NSLog(@"\n********************\n多语言配置文件解析失败\n********************\n");
+                NSLog([NSString stringWithFormat:@"\n************************************************************\n获取json多语言配置文件失败 :%@ \n************************************************************\n",err.description]);
+            }else{
+                
+                NSData *jaonData   = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
+                if (jaonData) {
+                    
+                    _languageDic = [NSJSONSerialization JSONObjectWithData:jaonData options:NSJSONReadingMutableContainers error:&err];
+                    if (err) {
+                        
+                        NSLog([NSString stringWithFormat:@"\n************************************************************\n多语言配置文件解析失败 :%@ \n************************************************************\n",err.description]);
+                    }
                 }
             }
         }
+    });
+    if (_languageDic) {
+        
+        NSString * keyStr = [NSString stringWithFormat:@"%@%@%@",@"@\"",oriStr,@"\""];
+        NSString * multiStr = _languageDic[keyStr][_languageType];
+        return multiStr?:oriStr;
+    } else {
+        return oriStr;
     }
-    NSString * keyStr = [NSString stringWithFormat:@"%@%@%@",@"@\"",oriStr,@"\""];
-    NSString * multiStr = _languageDic[keyStr][_languageType];
-    return multiStr?:oriStr;
 }
 
 @end
