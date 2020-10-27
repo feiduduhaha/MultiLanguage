@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (class, nonatomic) NSString * languageType;//json表中的语言类型
 
++ (void)addMulitLanguageJsonFilePath:(NSString *)filePath;
 + (NSString *)getCurrentLanguageTextWith:(NSString *)oriStr;
 @end
 

@@ -8,7 +8,7 @@
 #import "LanguageManager.h"
 
 static NSString *_languageType = nil;
-static NSDictionary *_languageDic = nil;
+static NSMutableDictionary *_languageDic = nil;
 
 @implementation LanguageManager
 @dynamic languageType;
@@ -16,6 +16,10 @@ static NSDictionary *_languageDic = nil;
 + (void)initialize{
     
     _languageType = @"zh_CN";
+    if (!_languageDic) {
+        
+        _languageDic = [NSMutableDictionary new];
+    }
 }
 
 + (NSString *)languageType{
@@ -26,33 +30,26 @@ static NSDictionary *_languageDic = nil;
     _languageType = languageType;
 }
 
-+ (NSString *)getCurrentLanguageTextWith:(NSString *)oriStr{
++ (void)addMulitLanguageJsonFilePath:(NSString *)filePath{
     
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
+    NSFileManager * fileManger = [NSFileManager defaultManager];
+    BOOL isDir = NO;
+    BOOL isExist = [fileManger fileExistsAtPath:filePath isDirectory:&isDir];
+    if (!isExist) {
+        NSLog(@"不存在的多语言映射json文件：%@",filePath);
+#ifdef DEBUG
+        assert(0);
+#endif
+    }
+    [self getJsonFromFile:filePath];
+}
+
++ (NSString *)getCurrentLanguageTextWith:(NSString *)oriStr{
+
+    if ([oriStr isEqualToString:@"通讯录"]) {
         
-        if (!_languageDic) {
-            
-            NSString *filePath = [[NSBundle mainBundle] pathForResource:@"multi-language" ofType:@"json"];
-            NSError * err = nil;
-            NSString *jsonStr = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&err];
-            if (err) {
-                
-                NSLog([NSString stringWithFormat:@"\n************************************************************\n获取json多语言配置文件失败 :%@ \n************************************************************\n",err.description]);
-            }else{
-                
-                NSData *jaonData   = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
-                if (jaonData) {
-                    
-                    _languageDic = [NSJSONSerialization JSONObjectWithData:jaonData options:NSJSONReadingMutableContainers error:&err];
-                    if (err) {
-                        
-                        NSLog([NSString stringWithFormat:@"\n************************************************************\n多语言配置文件解析失败 :%@ \n************************************************************\n",err.description]);
-                    }
-                }
-            }
-        }
-    });
+        NSLog(@"ad");
+    }
     if (_languageDic) {
         
         NSString * keyStr = [NSString stringWithFormat:@"%@%@%@",@"@\"",oriStr,@"\""];
@@ -63,4 +60,25 @@ static NSDictionary *_languageDic = nil;
     }
 }
 
++ (void)getJsonFromFile:(NSString *)filePath{
+    
+    NSError * err = nil;
+    NSString *jsonStr = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&err];
+    if (err) {
+        
+        NSLog([NSString stringWithFormat:@"\n************************************************************\n获取json多语言配置文件失败 :%@ \n************************************************************\n",err.description]);
+    }else{
+        
+        NSData *jaonData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
+        if (jaonData) {
+            
+            NSDictionary * jsonDic = [NSJSONSerialization JSONObjectWithData:jaonData options:NSJSONReadingMutableContainers error:&err];
+            if (err) {
+                
+                NSLog([NSString stringWithFormat:@"\n************************************************************\n多语言配置文件解析失败 :%@ \n************************************************************\n",err.description]);
+            }
+            [_languageDic setValuesForKeysWithDictionary:jsonDic];
+        }
+    }
+}
 @end
