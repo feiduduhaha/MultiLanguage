@@ -34,19 +34,4 @@
     }
 }
 
-+ (void)handleSubViewsStaticText:(UIView *)targetView{
-    
-    if ([targetView isKindOfClass:[UILabel class]]) {
-        
-        UILabel * label = (UILabel *)targetView;
-        label.text = label.text.multi;
-    }else{
-       
-        for (UIView * subView in targetView.subviews) {
-            
-            [UIView handleSubViewsStaticText:subView];
-        }
-    }
-}
-
 @end
