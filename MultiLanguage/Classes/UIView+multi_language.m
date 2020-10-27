@@ -18,10 +18,19 @@
         
         UILabel * label = (UILabel *)self;
         label.text = label.text.multi;
-    }else if ([self isKindOfClass:[UITextField class]]){
+    }
+    else if ([self isKindOfClass:[UITextField class]]){
         
         UITextField * textField = (UITextField *)self;
         textField.placeholder = textField.placeholder.multi;
+    }
+    else if ([self isKindOfClass:[UITabBar class]]) {
+        
+        UITabBar * bar = (UITabBar *)self;
+        for (UIBarButtonItem * item in bar.items) {
+            
+            item.title = item.title.multi;
+        }
     }
 }
 
