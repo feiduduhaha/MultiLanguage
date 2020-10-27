@@ -18,10 +18,10 @@
         
         UILabel * label = (UILabel *)self;
         label.text = label.text.multi;
-    }else if ([self isKindOfClass:[UIButton class]]){
+    }else if ([self isKindOfClass:[UITextField class]]){
         
-        UIButton * btn = (UIButton *)self;
-        [btn setTitle:btn.currentTitle.multi forState:btn.state];
+        UITextField * textField = (UITextField *)self;
+        textField.placeholder = textField.placeholder.multi;
     }
 }
 
