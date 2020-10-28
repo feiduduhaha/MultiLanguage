@@ -10,7 +10,7 @@ print("\n*****************执行过滤过程中的中文字符串添加'.multi'�
 answer = filedialog.askdirectory(initialdir=os.getcwd(), title="选择需要过滤的目录")
 workPath = answer + '/'
 print(workPath)
-if len(workPath) == 0:
+if len(workPath) == 1:
     print("未选择目录，脚本停止运行")
     sys.exit(0)
     
