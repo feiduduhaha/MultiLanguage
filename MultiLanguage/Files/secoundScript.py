@@ -26,8 +26,9 @@ with open(filePath) as csvFile:
 
 csvFile.close()
 
+jsonfilePath = os.path.join(os.path.expanduser('~'),"Desktop/multi-language.json")
 json_Str = json.dumps(needHandleKeyDic, ensure_ascii=False)
-with open("/Users/silence/DeskTop/multi-language.json", "w", encoding='utf-8-sig') as f:
+with open(jsonfilePath, "w", encoding='utf-8-sig') as f:
 	json.dump(needHandleKeyDic, f, ensure_ascii=False)
 
 print ("\n转换完成")

@@ -91,7 +91,8 @@ for filePath in needHandleFilesArr:#循环文件
 # 1. 创建文件对象
 # 2. 基于文件对象构建 csv写入对象
 # 3. 构建列表头
-csvFile = open('/Users/silence/DeskTop/multi-language.csv','w',encoding='utf-8-sig',newline="")
+csvfilePath = os.path.join(os.path.expanduser('~'),"Desktop/multi-language.csv")
+csvFile = open(csvfilePath,'w',encoding='utf-8-sig',newline="")
 csv_writer = csv.writer(csvFile)
 csv_writer.writerow(["key","zh_CN","en_GB","ja_JP"])
 # 4. 将字典写入表格文件
