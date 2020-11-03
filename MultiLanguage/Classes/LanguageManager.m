@@ -46,9 +46,9 @@ static NSMutableDictionary *_languageDic = nil;
 
 + (NSString *)getCurrentLanguageTextWith:(NSString *)oriStr{
 
-    if ([oriStr isEqualToString:@"通讯录"]) {
+    if (!oriStr || oriStr.length == 0 || _languageDic.count == 0) {
         
-        NSLog(@"ad");
+        return oriStr;
     }
     if (_languageDic) {
         
@@ -66,7 +66,7 @@ static NSMutableDictionary *_languageDic = nil;
     NSString *jsonStr = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&err];
     if (err) {
         
-        NSLog([NSString stringWithFormat:@"\n************************************************************\n获取json多语言配置文件失败 :%@ \n************************************************************\n",err.description]);
+        NSLog(@"%@", [NSString stringWithFormat:@"\n************************************************************\n获取json多语言配置文件失败 :%@ \n************************************************************\n",err.description]);
     }else{
         
         NSData *jaonData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
@@ -75,7 +75,7 @@ static NSMutableDictionary *_languageDic = nil;
             NSDictionary * jsonDic = [NSJSONSerialization JSONObjectWithData:jaonData options:NSJSONReadingMutableContainers error:&err];
             if (err) {
                 
-                NSLog([NSString stringWithFormat:@"\n************************************************************\n多语言配置文件解析失败 :%@ \n************************************************************\n",err.description]);
+                NSLog(@"%@", [NSString stringWithFormat:@"\n************************************************************\n多语言配置文件解析失败 :%@ \n************************************************************\n",err.description]);
             }
             [_languageDic setValuesForKeysWithDictionary:jsonDic];
         }
