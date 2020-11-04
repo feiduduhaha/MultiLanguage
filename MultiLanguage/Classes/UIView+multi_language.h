@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (multi_language)
 
-+ (instancetype)dccallnewVIie;
+
 @end
 
 NS_ASSUME_NONNULL_END

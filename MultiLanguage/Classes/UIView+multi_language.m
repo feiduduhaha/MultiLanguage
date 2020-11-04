@@ -17,12 +17,24 @@
     if ([self isKindOfClass:[UILabel class]]) {
         
         UILabel * label = (UILabel *)self;
+        if ([label.text hasPrefix:@"可用时长"]) {
+            NSLog(@"");
+        }
         label.text = label.text.multi;
+    }
+    if ([self isKindOfClass:[UIButton class]]) {
+        
+        UIButton * btn = (UIButton *)self;
+        [btn setTitle:btn.currentTitle.multi forState:btn.state];
     }
     else if ([self isKindOfClass:[UITextField class]]){
         
         UITextField * textField = (UITextField *)self;
         textField.placeholder = textField.placeholder.multi;
+        if (textField.text.length) {
+            
+            textField.text = textField.text.multi;
+        }
     }
     else if ([self isKindOfClass:[UITabBar class]]) {
         
