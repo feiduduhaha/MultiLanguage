@@ -61,7 +61,12 @@ for filePath in needHandleFilesArr:#循环文件
 	stringArr = get_contends_arr(totalString)
 	print ("正则读取过滤" + filePath)
 	shouldReWrite = 0
-
+	
+	if not os.access(filePath, os.W_OK):
+		print ("无权限处理该文件 ：" + filePath + "\n请在控制台中使用sudo 运行此脚本")
+		print ("\n脚本运行结束")
+		sys.exit(0)
+		
 	if filePath.endswith('.xib') or filePath.endswith('.storyBoard'):
 		#xib 和 storyBoard 中的过滤
 		for lineSring in stringArr:#循环每一行内容
