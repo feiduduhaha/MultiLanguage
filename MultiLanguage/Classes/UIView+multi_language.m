@@ -17,9 +17,6 @@
     if ([self isKindOfClass:[UILabel class]]) {
         
         UILabel * label = (UILabel *)self;
-        if ([label.text hasPrefix:@"可用时长"]) {
-            NSLog(@"");
-        }
         label.text = label.text.multi;
     }
     if ([self isKindOfClass:[UIButton class]]) {
