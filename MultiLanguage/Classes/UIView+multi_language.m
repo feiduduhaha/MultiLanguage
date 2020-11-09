@@ -31,10 +31,10 @@
         
         UITextField * textField = (UITextField *)self;
         textField.placeholder = textField.placeholder.multi;
-        if (textField.text.length) {
-            
-            textField.text = textField.text.multi;
-        }
+//        if (textField.text.length) {
+//            
+//            textField.text = textField.text.multi;
+//        }
     }
     else if ([self isKindOfClass:[UITabBar class]]) {
         
