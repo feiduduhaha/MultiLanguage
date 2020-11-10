@@ -21,6 +21,7 @@
 		6966806ADE8047A25982EF6CBFA06A16 /* Pods-MultiLanguage_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E27781F5A3430A9F59B56A9F067B33 /* Pods-MultiLanguage_Example-dummy.m */; };
 		BB9E7EB58BD469608C55CAE30368E071 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		CBA67F4EBC184866F14039504E571355 /* NSString+multi_language.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B709ADE898A7D8359431AF25186A8B /* NSString+multi_language.m */; };
+		E862EC2C255A3E82002E76C2 /* Deduplication.py in Resources */ = {isa = PBXBuildFile; fileRef = E862EC2B255A3E82002E76C2 /* Deduplication.py */; };
 		F324F9763CE0FB403FB04CA7565C139B /* MultiLanguage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC2AE21B917DBB253F7CD8671A9ECF /* MultiLanguage-dummy.m */; };
 		F396430B019A9802278C4FBF75485FAE /* Multi_language.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7CC02D5336D4DB602BB02FD83BA922 /* Multi_language.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD6979650B3104C38D1A0DF9E2924352 /* Multi_language.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 40E35ABAC276449E63882886838C22AE /* Multi_language.bundle */; };
@@ -51,23 +52,23 @@
 		2CD210D13EBF2209DF609FDA6E9A84EA /* Config.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Config.plist; path = MultiLanguage/Files/Config.plist; sourceTree = "<group>"; };
 		307139AA841931AEAFE3152595E969FB /* LanguageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LanguageManager.m; path = MultiLanguage/Classes/LanguageManager.m; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		393DF786A1DF0CC9F71FDE11289A0BB3 /* MultiLanguage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MultiLanguage.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		393DF786A1DF0CC9F71FDE11289A0BB3 /* MultiLanguage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MultiLanguage.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3E2DB3C0182AC1AE6AB0287BEBAD2411 /* MultiLanguage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MultiLanguage-Info.plist"; sourceTree = "<group>"; };
-		40E35ABAC276449E63882886838C22AE /* Multi_language.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Multi_language.bundle; path = "MultiLanguage-Multi_language.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E35ABAC276449E63882886838C22AE /* Multi_language.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Multi_language.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		41B709ADE898A7D8359431AF25186A8B /* NSString+multi_language.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+multi_language.m"; path = "MultiLanguage/Classes/NSString+multi_language.m"; sourceTree = "<group>"; };
 		45E27781F5A3430A9F59B56A9F067B33 /* Pods-MultiLanguage_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MultiLanguage_Example-dummy.m"; sourceTree = "<group>"; };
 		5EDC2AE21B917DBB253F7CD8671A9ECF /* MultiLanguage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MultiLanguage-dummy.m"; sourceTree = "<group>"; };
-		5F3F22A8F2559367EA07199E614A7445 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		6AB89B86C3D675CE3EEC39D226759C10 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		78B4564C898F1B1AE6C043F7CC856AA9 /* Pods_MultiLanguage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MultiLanguage_Example.framework; path = "Pods-MultiLanguage_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F3F22A8F2559367EA07199E614A7445 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6AB89B86C3D675CE3EEC39D226759C10 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		78B4564C898F1B1AE6C043F7CC856AA9 /* Pods_MultiLanguage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiLanguage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B24A121F41A571C93BAC872ACCA3241 /* Pods-MultiLanguage_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MultiLanguage_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		88551DEA7125990FF78AE2B13EB6C9D5 /* Pods-MultiLanguage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MultiLanguage_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		93137CBA32F9CE2B616C4C76FB47991F /* MultiLanguage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiLanguage.debug.xcconfig; sourceTree = "<group>"; };
 		9A214971F6D97A07858CCF1A6D995215 /* MultiLanguage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiLanguage-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7461B75D63804E6599BC54D7EAEA6DD /* MultiLanguage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultiLanguage.release.xcconfig; sourceTree = "<group>"; };
 		BCFB43B67A9B53F9D6B72C1C360B6928 /* MultiLanguage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultiLanguage-umbrella.h"; sourceTree = "<group>"; };
-		BF4D0772B59867F36C5F7DA8B49A8978 /* MultiLanguage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MultiLanguage.framework; path = MultiLanguage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF4D0772B59867F36C5F7DA8B49A8978 /* MultiLanguage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MultiLanguage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBABBE4E9CE07A3D5F2BA239916251D6 /* Pods-MultiLanguage_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MultiLanguage_Example-Info.plist"; sourceTree = "<group>"; };
 		CD7CC02D5336D4DB602BB02FD83BA922 /* Multi_language.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Multi_language.h; path = MultiLanguage/Classes/Multi_language.h; sourceTree = "<group>"; };
 		D0C0389E42F159AF92C16ED638B42603 /* ResourceBundle-Multi_language-MultiLanguage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Multi_language-MultiLanguage-Info.plist"; sourceTree = "<group>"; };
@@ -75,8 +76,9 @@
 		D5FFA37910875E52FFC1E5198FEA7F5E /* LanguageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LanguageManager.h; path = MultiLanguage/Classes/LanguageManager.h; sourceTree = "<group>"; };
 		E174C826048D6E6C8DBB8F5052E9C1D3 /* Pods-MultiLanguage_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MultiLanguage_Example.modulemap"; sourceTree = "<group>"; };
 		E217519DE20C1AFAE1EECF538134FD03 /* Pods-MultiLanguage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MultiLanguage_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E30155545A000E48A81EBBF792D20759 /* firstScript.py */ = {isa = PBXFileReference; includeInIndex = 1; name = firstScript.py; path = MultiLanguage/Files/firstScript.py; sourceTree = "<group>"; };
-		E4B5D2EE681A8A73FB51876223B739A2 /* secoundScript.py */ = {isa = PBXFileReference; includeInIndex = 1; name = secoundScript.py; path = MultiLanguage/Files/secoundScript.py; sourceTree = "<group>"; };
+		E30155545A000E48A81EBBF792D20759 /* firstScript.py */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.python; name = firstScript.py; path = MultiLanguage/Files/firstScript.py; sourceTree = "<group>"; };
+		E4B5D2EE681A8A73FB51876223B739A2 /* secoundScript.py */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.python; name = secoundScript.py; path = MultiLanguage/Files/secoundScript.py; sourceTree = "<group>"; };
+		E862EC2B255A3E82002E76C2 /* Deduplication.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = Deduplication.py; sourceTree = "<group>"; };
 		EBE24E0F66C28B7526AE9F077D173342 /* MultiLanguage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MultiLanguage.modulemap; sourceTree = "<group>"; };
 		F7E803452596CEEE1D5E3CEA95CC9550 /* Pods-MultiLanguage_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MultiLanguage_Example-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +151,7 @@
 			children = (
 				2CD210D13EBF2209DF609FDA6E9A84EA /* Config.plist */,
 				E30155545A000E48A81EBBF792D20759 /* firstScript.py */,
+				E862EC2B255A3E82002E76C2 /* Deduplication.py */,
 				E4B5D2EE681A8A73FB51876223B739A2 /* secoundScript.py */,
 			);
 			name = Resources;
@@ -355,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E862EC2C255A3E82002E76C2 /* Deduplication.py in Resources */,
 				0BDF28B91569E0C7CC14C4B1D7EBDBAC /* Config.plist in Resources */,
 				5EAC1814A9B5DC4829429C69B0F3BFC8 /* firstScript.py in Resources */,
 				4BBBC81D857907E9801410E72628E9D2 /* secoundScript.py in Resources */,
@@ -547,8 +551,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
