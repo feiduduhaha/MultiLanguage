@@ -36,7 +36,7 @@ static NSMutableDictionary *_languageDic = nil;
     BOOL isDir = NO;
     BOOL isExist = [fileManger fileExistsAtPath:filePath isDirectory:&isDir];
     if (!isExist) {
-        NSLog(@"不存在的多语言映射json文件：%@",filePath);
+        NSLog(@"不存在的多语言映射plist文件：%@",filePath);
 #ifdef DEBUG
         assert(0);
 #endif
@@ -62,23 +62,9 @@ static NSMutableDictionary *_languageDic = nil;
 
 + (void)getJsonFromFile:(NSString *)filePath{
     
-    NSError * err = nil;
-    NSString *jsonStr = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&err];
-    if (err) {
-        
-        NSLog(@"%@", [NSString stringWithFormat:@"\n************************************************************\n获取json多语言配置文件失败 :%@ \n************************************************************\n",err.description]);
-    }else{
-        
-        NSData *jaonData = [jsonStr dataUsingEncoding:NSUTF8StringEncoding];
-        if (jaonData) {
-            
-            NSDictionary * jsonDic = [NSJSONSerialization JSONObjectWithData:jaonData options:NSJSONReadingMutableContainers error:&err];
-            if (err) {
-                
-                NSLog(@"%@", [NSString stringWithFormat:@"\n************************************************************\n多语言配置文件解析失败 :%@ \n************************************************************\n",err.description]);
-            }
-            [_languageDic setValuesForKeysWithDictionary:jsonDic];
-        }
+    NSDictionary * dic = [[NSDictionary alloc] initWithContentsOfFile:filePath];
+    if (dic) {
+        [_languageDic setValuesForKeysWithDictionary:dic];
     }
 }
 @end
