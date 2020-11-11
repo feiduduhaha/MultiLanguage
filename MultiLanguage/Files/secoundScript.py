@@ -23,7 +23,7 @@ needHandleKeyDic = {}
 with open(filePath) as csvFile:
     table = csv.reader(csvFile)
     for (key,zh_CN,en_GB,ja_JP) in table:
-        needHandleKeyDic[('@"' + key + '"')] = {"zh_CN":zh_CN,"en_GB":en_GB,"ja_JP":ja_JP}
+        needHandleKeyDic[key] = {"zh_CN":zh_CN,"en_GB":en_GB,"ja_JP":ja_JP}
 
 csvFile.close()
 

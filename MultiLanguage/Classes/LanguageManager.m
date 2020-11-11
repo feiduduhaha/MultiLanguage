@@ -36,7 +36,7 @@ static NSMutableDictionary *_languageDic = nil;
     BOOL isDir = NO;
     BOOL isExist = [fileManger fileExistsAtPath:filePath isDirectory:&isDir];
     if (!isExist) {
-        NSLog(@"不存在的多语言映射plist文件：%@",filePath);
+        NSLog(@"不存在的多语言映射json文件：%@",filePath);
 #ifdef DEBUG
         assert(0);
 #endif
@@ -52,9 +52,7 @@ static NSMutableDictionary *_languageDic = nil;
     }
     if (_languageDic) {
         
-        NSString * keyStr = [NSString stringWithFormat:@"%@%@%@",@"@\"",oriStr,@"\""];
-        NSString * multiStr = _languageDic[keyStr][_languageType];
-        return multiStr?:oriStr;
+        return _languageDic[oriStr][_languageType]?:oriStr;
     } else {
         return oriStr;
     }
