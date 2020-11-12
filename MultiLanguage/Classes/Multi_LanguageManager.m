@@ -1,16 +1,16 @@
 //
-//  LanguageManager.m
+//  Multi_LanguageManager.m
 //  MultiLanguage
 //
 //  Created by silence on 2020/10/22.
 //
 
-#import "LanguageManager.h"
+#import "Multi_LanguageManager.h"
 
 static NSString *_languageType = nil;
 static NSMutableDictionary *_languageDic = nil;
 
-@implementation LanguageManager
+@implementation Multi_LanguageManager
 @dynamic languageType;
 
 + (void)initialize{

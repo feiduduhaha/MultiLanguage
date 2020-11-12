@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rXS-SJ-zaY">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -7,6 +7,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="eOv-Lb-p9N">
+            <objects>
+                <navigationController id="rXS-SJ-zaY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pXq-Ka-HSK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="whP-gf-Uak" kind="relationship" relationship="rootViewController" id="Rb9-EF-qx5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I5Z-dY-Mk3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-732" y="430"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="wQg-tq-qST">
             <objects>
@@ -23,15 +39,44 @@
                                 <rect key="frame" x="15" y="318.5" width="345" height="30"/>
                                 <state key="normal" title="留言"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下方按钮原中文为：留言" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3E-tf-ItM">
+                                <rect key="frame" x="92" y="274" width="191" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRs-hz-qT2">
+                                <rect key="frame" x="166.5" y="233.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="集成此组件后，只需设置主工程内的test.json文件即可" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqG-TF-JlU">
+                                <rect key="frame" x="31" y="616" width="343" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="QFw-SH-QMk" firstAttribute="top" secondItem="l3E-tf-ItM" secondAttribute="bottom" constant="23.5" id="0fu-U5-bAb"/>
                             <constraint firstAttribute="trailing" secondItem="QFw-SH-QMk" secondAttribute="trailing" constant="15" id="8fI-f2-fke"/>
                             <constraint firstItem="QFw-SH-QMk" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="EBw-mN-VED"/>
+                            <constraint firstItem="mqG-TF-JlU" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="15" id="P4R-4A-aI8"/>
+                            <constraint firstItem="l3E-tf-ItM" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="Pca-av-ihL"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="mqG-TF-JlU" secondAttribute="bottom" constant="15" id="USQ-db-SCr"/>
                             <constraint firstItem="QFw-SH-QMk" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="Vmf-uV-c9t"/>
+                            <constraint firstItem="l3E-tf-ItM" firstAttribute="top" secondItem="tRs-hz-qT2" secondAttribute="bottom" constant="20" id="rPK-Gy-3FK"/>
+                            <constraint firstItem="mqG-TF-JlU" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailingMargin" constant="15" id="tSX-6K-nNE"/>
                             <constraint firstItem="QFw-SH-QMk" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="15" id="wmM-g7-7UD"/>
+                            <constraint firstItem="tRs-hz-qT2" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="zqM-3C-Pre"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="GTz-7V-szH"/>
+                    <connections>
+                        <outlet property="currentLanguageLabel" destination="tRs-hz-qT2" id="yhj-5e-YT1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -21,6 +21,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		E862EC40255A3FCB002E76C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E862EC3E255A3FCB002E76C2 /* LaunchScreen.storyboard */; };
 		E862EC41255A3FCB002E76C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E862EC3F255A3FCB002E76C2 /* Main.storyboard */; };
+		E862EC65255D1D42002E76C2 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = E862EC64255D1D42002E76C2 /* test.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		E0451E78A8FB20A99D0016FF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E862EC3E255A3FCB002E76C2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E862EC3F255A3FCB002E76C2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E862EC64255D1D42002E76C2 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				6003F59D195388D20070C39A /* MULTIAppDelegate.m */,
 				6003F5A5195388D20070C39A /* MULTIViewController.h */,
 				6003F5A6195388D20070C39A /* MULTIViewController.m */,
+				E862EC64255D1D42002E76C2 /* test.json */,
 				E862EC3E255A3FCB002E76C2 /* LaunchScreen.storyboard */,
 				E862EC3F255A3FCB002E76C2 /* Main.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E862EC41255A3FCB002E76C2 /* Main.storyboard in Resources */,
+				E862EC65255D1D42002E76C2 /* test.json in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				E862EC40255A3FCB002E76C2 /* LaunchScreen.storyboard in Resources */,
 			);

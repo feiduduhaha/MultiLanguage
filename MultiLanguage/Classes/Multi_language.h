@@ -10,5 +10,5 @@
 
 #import "NSString+multi_language.h"
 #import "UIView+multi_language.h"
-#import "LanguageManager.h"
+#import "Multi_LanguageManager.h"
 #endif /* Multi_language_h */

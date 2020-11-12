@@ -1,5 +1,5 @@
 //
-//  LanguageManager.h
+//  Multi_LanguageManager.h
 //  MultiLanguage
 //
 //  Created by silence on 2020/10/22.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LanguageManager : NSObject
+@interface Multi_LanguageManager : NSObject
 
 @property (class, nonatomic) NSString * languageType;//json表中的语言类型
 

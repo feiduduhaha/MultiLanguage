@@ -13,13 +13,13 @@
 		24230A3A28386E39907C0956FFA66D98 /* Multi_language.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 40E35ABAC276449E63882886838C22AE /* Multi_language.bundle */; };
 		35681F2D1B428A62C19A589644EEB063 /* firstScript.py in Resources */ = {isa = PBXBuildFile; fileRef = E30155545A000E48A81EBBF792D20759 /* firstScript.py */; };
 		3DCF1DDF92BB49EC0857539B4A190383 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CD210D13EBF2209DF609FDA6E9A84EA /* Config.plist */; };
-		3E21AC3DDC00804B71DEA772B4D491FA /* LanguageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D5FFA37910875E52FFC1E5198FEA7F5E /* LanguageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E21AC3DDC00804B71DEA772B4D491FA /* Multi_LanguageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D5FFA37910875E52FFC1E5198FEA7F5E /* Multi_LanguageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4352DB0D4FF5AD7338D2C8385939790F /* UIView+multi_language.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B065C70F7A5C5F66B5D416F02C0EEF0 /* UIView+multi_language.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48A9013088A30F80AC681C17CD9695E8 /* secound.py in Resources */ = {isa = PBXBuildFile; fileRef = E4B5D2EE681A8A73FB51876223B739A2 /* secound.py */; };
 		5E73122C2EFEEFCFDF4839C15CA8B49B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		6966806ADE8047A25982EF6CBFA06A16 /* Pods-MultiLanguage_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E27781F5A3430A9F59B56A9F067B33 /* Pods-MultiLanguage_Example-dummy.m */; };
 		74059C7C3C01C13F4449BFA68A9D8E8E /* NSString+multi_language.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B709ADE898A7D8359431AF25186A8B /* NSString+multi_language.m */; };
-		7F34576E1FF2551D3AA116154C4E6A6F /* LanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 307139AA841931AEAFE3152595E969FB /* LanguageManager.m */; };
+		7F34576E1FF2551D3AA116154C4E6A6F /* Multi_LanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 307139AA841931AEAFE3152595E969FB /* Multi_LanguageManager.m */; };
 		9C795B1FB04BE614B5C52A016DA77EA0 /* NSString+multi_language.h in Headers */ = {isa = PBXBuildFile; fileRef = 1641DF1F76154702495A3E81C26BE90C /* NSString+multi_language.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB9E7EB58BD469608C55CAE30368E071 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		E862EC51255B9529002E76C2 /* Deduplication.py in Resources */ = {isa = PBXBuildFile; fileRef = E862EC50255B9529002E76C2 /* Deduplication.py */; };
@@ -50,7 +50,7 @@
 		1A6DDBB32E88863900E3809592B70423 /* Pods-MultiLanguage_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MultiLanguage_Example-umbrella.h"; sourceTree = "<group>"; };
 		1B065C70F7A5C5F66B5D416F02C0EEF0 /* UIView+multi_language.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+multi_language.h"; path = "MultiLanguage/Classes/UIView+multi_language.h"; sourceTree = "<group>"; };
 		2CD210D13EBF2209DF609FDA6E9A84EA /* Config.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Config.plist; path = MultiLanguage/Files/Config.plist; sourceTree = "<group>"; };
-		307139AA841931AEAFE3152595E969FB /* LanguageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LanguageManager.m; path = MultiLanguage/Classes/LanguageManager.m; sourceTree = "<group>"; };
+		307139AA841931AEAFE3152595E969FB /* Multi_LanguageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Multi_LanguageManager.m; path = MultiLanguage/Classes/Multi_LanguageManager.m; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		393DF786A1DF0CC9F71FDE11289A0BB3 /* MultiLanguage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MultiLanguage.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3E2DB3C0182AC1AE6AB0287BEBAD2411 /* MultiLanguage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MultiLanguage-Info.plist"; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		CD7CC02D5336D4DB602BB02FD83BA922 /* Multi_language.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Multi_language.h; path = MultiLanguage/Classes/Multi_language.h; sourceTree = "<group>"; };
 		D0C0389E42F159AF92C16ED638B42603 /* ResourceBundle-Multi_language-MultiLanguage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Multi_language-MultiLanguage-Info.plist"; sourceTree = "<group>"; };
 		D2D0725A9FF5E71B481E87F2BECDEB69 /* UIView+multi_language.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+multi_language.m"; path = "MultiLanguage/Classes/UIView+multi_language.m"; sourceTree = "<group>"; };
-		D5FFA37910875E52FFC1E5198FEA7F5E /* LanguageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LanguageManager.h; path = MultiLanguage/Classes/LanguageManager.h; sourceTree = "<group>"; };
+		D5FFA37910875E52FFC1E5198FEA7F5E /* Multi_LanguageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Multi_LanguageManager.h; path = MultiLanguage/Classes/Multi_LanguageManager.h; sourceTree = "<group>"; };
 		E174C826048D6E6C8DBB8F5052E9C1D3 /* Pods-MultiLanguage_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MultiLanguage_Example.modulemap"; sourceTree = "<group>"; };
 		E217519DE20C1AFAE1EECF538134FD03 /* Pods-MultiLanguage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MultiLanguage_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E30155545A000E48A81EBBF792D20759 /* firstScript.py */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.python; name = firstScript.py; path = MultiLanguage/Files/firstScript.py; sourceTree = "<group>"; };
@@ -220,8 +220,8 @@
 		F16E6A8188FCE55A16EE8DA099C97F0B /* MultiLanguage */ = {
 			isa = PBXGroup;
 			children = (
-				D5FFA37910875E52FFC1E5198FEA7F5E /* LanguageManager.h */,
-				307139AA841931AEAFE3152595E969FB /* LanguageManager.m */,
+				D5FFA37910875E52FFC1E5198FEA7F5E /* Multi_LanguageManager.h */,
+				307139AA841931AEAFE3152595E969FB /* Multi_LanguageManager.m */,
 				CD7CC02D5336D4DB602BB02FD83BA922 /* Multi_language.h */,
 				1641DF1F76154702495A3E81C26BE90C /* NSString+multi_language.h */,
 				41B709ADE898A7D8359431AF25186A8B /* NSString+multi_language.m */,
@@ -242,7 +242,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E21AC3DDC00804B71DEA772B4D491FA /* LanguageManager.h in Headers */,
+				3E21AC3DDC00804B71DEA772B4D491FA /* Multi_LanguageManager.h in Headers */,
 				130475277816EB04EE4802BF41261C86 /* Multi_language.h in Headers */,
 				019C6AD072F1F732854962C96BEF7C1C /* MultiLanguage-umbrella.h in Headers */,
 				9C795B1FB04BE614B5C52A016DA77EA0 /* NSString+multi_language.h in Headers */,
@@ -393,7 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F34576E1FF2551D3AA116154C4E6A6F /* LanguageManager.m in Sources */,
+				7F34576E1FF2551D3AA116154C4E6A6F /* Multi_LanguageManager.m in Sources */,
 				F25C9572FC311CBE5EF93D4F668CB955 /* MultiLanguage-dummy.m in Sources */,
 				74059C7C3C01C13F4449BFA68A9D8E8E /* NSString+multi_language.m in Sources */,
 				FD701912B547D6BE24C90A820A0918DA /* UIView+multi_language.m in Sources */,

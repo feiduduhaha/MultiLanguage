@@ -7,13 +7,13 @@
 //
 
 #import "NSString+multi_language.h"
-#import "LanguageManager.h"
+#import "Multi_LanguageManager.h"
 
 @implementation NSString (multi_language)
 
 - (NSString *)multi{
     
-    return [LanguageManager getCurrentLanguageTextWith:self];
+    return [Multi_LanguageManager getCurrentLanguageTextWith:self];
 }
 
 @end

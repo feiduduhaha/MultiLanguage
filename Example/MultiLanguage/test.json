@@ -1,0 +1,12 @@
+{
+    "留言": {
+        "zh_CN": "留言",
+        "en_GB": "leave a message",
+        "ja_JP": "伝言を残す"
+    },
+    "此处文字是代码映射的多语言": {
+        "zh_CN": "此处文字是代码映射的多语言",
+        "en_GB": "The text here is a multilingual code mapping",
+        "ja_JP": "ここのテキストは多言語コードマッピングです"
+    }
+}
