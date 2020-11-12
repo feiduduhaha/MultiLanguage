@@ -15,7 +15,7 @@
 		3DCF1DDF92BB49EC0857539B4A190383 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CD210D13EBF2209DF609FDA6E9A84EA /* Config.plist */; };
 		3E21AC3DDC00804B71DEA772B4D491FA /* LanguageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D5FFA37910875E52FFC1E5198FEA7F5E /* LanguageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4352DB0D4FF5AD7338D2C8385939790F /* UIView+multi_language.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B065C70F7A5C5F66B5D416F02C0EEF0 /* UIView+multi_language.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48A9013088A30F80AC681C17CD9695E8 /* secoundScript.py in Resources */ = {isa = PBXBuildFile; fileRef = E4B5D2EE681A8A73FB51876223B739A2 /* secoundScript.py */; };
+		48A9013088A30F80AC681C17CD9695E8 /* secound.py in Resources */ = {isa = PBXBuildFile; fileRef = E4B5D2EE681A8A73FB51876223B739A2 /* secound.py */; };
 		5E73122C2EFEEFCFDF4839C15CA8B49B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		6966806ADE8047A25982EF6CBFA06A16 /* Pods-MultiLanguage_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E27781F5A3430A9F59B56A9F067B33 /* Pods-MultiLanguage_Example-dummy.m */; };
 		74059C7C3C01C13F4449BFA68A9D8E8E /* NSString+multi_language.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B709ADE898A7D8359431AF25186A8B /* NSString+multi_language.m */; };
@@ -77,7 +77,7 @@
 		E174C826048D6E6C8DBB8F5052E9C1D3 /* Pods-MultiLanguage_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MultiLanguage_Example.modulemap"; sourceTree = "<group>"; };
 		E217519DE20C1AFAE1EECF538134FD03 /* Pods-MultiLanguage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MultiLanguage_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E30155545A000E48A81EBBF792D20759 /* firstScript.py */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.python; name = firstScript.py; path = MultiLanguage/Files/firstScript.py; sourceTree = "<group>"; };
-		E4B5D2EE681A8A73FB51876223B739A2 /* secoundScript.py */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.python; name = secoundScript.py; path = MultiLanguage/Files/secoundScript.py; sourceTree = "<group>"; };
+		E4B5D2EE681A8A73FB51876223B739A2 /* secound.py */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.python; name = secound.py; path = MultiLanguage/Files/secound.py; sourceTree = "<group>"; };
 		E862EC50255B9529002E76C2 /* Deduplication.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = Deduplication.py; path = ../../../../Desktop/Deduplication.py; sourceTree = "<group>"; };
 		EBE24E0F66C28B7526AE9F077D173342 /* MultiLanguage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MultiLanguage.modulemap; sourceTree = "<group>"; };
 		F7E803452596CEEE1D5E3CEA95CC9550 /* Pods-MultiLanguage_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MultiLanguage_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 			children = (
 				2CD210D13EBF2209DF609FDA6E9A84EA /* Config.plist */,
 				E30155545A000E48A81EBBF792D20759 /* firstScript.py */,
-				E4B5D2EE681A8A73FB51876223B739A2 /* secoundScript.py */,
+				E4B5D2EE681A8A73FB51876223B739A2 /* secound.py */,
 				E862EC50255B9529002E76C2 /* Deduplication.py */,
 			);
 			name = Resources;
@@ -361,7 +361,7 @@
 				E862EC51255B9529002E76C2 /* Deduplication.py in Resources */,
 				3DCF1DDF92BB49EC0857539B4A190383 /* Config.plist in Resources */,
 				35681F2D1B428A62C19A589644EEB063 /* firstScript.py in Resources */,
-				48A9013088A30F80AC681C17CD9695E8 /* secoundScript.py in Resources */,
+				48A9013088A30F80AC681C17CD9695E8 /* secound.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

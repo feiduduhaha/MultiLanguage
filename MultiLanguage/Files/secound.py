@@ -27,10 +27,12 @@ with open(filePath) as csvFile:
 
 csvFile.close()
 
-plistfilePath = os.path.join(os.path.expanduser('~'),"Desktop/result.plist")
-with open(plistfilePath, 'wb') as fp:
-     dump(needHandleKeyDic, fp)
+jsonfilePath = os.path.join(os.path.expanduser('~'),"Desktop/multi-language.json")
+json_Str = json.dumps(needHandleKeyDic, ensure_ascii=False)
+with open(jsonfilePath, "w", encoding='utf-8-sig') as f:
+    json.dump(needHandleKeyDic, f, ensure_ascii=False)
+print ("\n转换完成")
+print ("将桌面上的multi-language.json文件拖入工程MainBundle即可\n")
+print("\n****************************************************************************\n")
 
-
-print("\n*****************转换为plist成功，输出为桌面/result.plist**********************\n")
 sys.exit(0)
