@@ -22,7 +22,6 @@
 		7F34576E1FF2551D3AA116154C4E6A6F /* Multi_LanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 307139AA841931AEAFE3152595E969FB /* Multi_LanguageManager.m */; };
 		9C795B1FB04BE614B5C52A016DA77EA0 /* NSString+multi_language.h in Headers */ = {isa = PBXBuildFile; fileRef = 1641DF1F76154702495A3E81C26BE90C /* NSString+multi_language.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB9E7EB58BD469608C55CAE30368E071 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		E862EC51255B9529002E76C2 /* Deduplication.py in Resources */ = {isa = PBXBuildFile; fileRef = E862EC50255B9529002E76C2 /* Deduplication.py */; };
 		F25C9572FC311CBE5EF93D4F668CB955 /* MultiLanguage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC2AE21B917DBB253F7CD8671A9ECF /* MultiLanguage-dummy.m */; };
 		FD701912B547D6BE24C90A820A0918DA /* UIView+multi_language.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D0725A9FF5E71B481E87F2BECDEB69 /* UIView+multi_language.m */; };
 /* End PBXBuildFile section */
@@ -78,7 +77,6 @@
 		E217519DE20C1AFAE1EECF538134FD03 /* Pods-MultiLanguage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MultiLanguage_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E30155545A000E48A81EBBF792D20759 /* firstScript.py */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.python; name = firstScript.py; path = MultiLanguage/Files/firstScript.py; sourceTree = "<group>"; };
 		E4B5D2EE681A8A73FB51876223B739A2 /* secound.py */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.python; name = secound.py; path = MultiLanguage/Files/secound.py; sourceTree = "<group>"; };
-		E862EC50255B9529002E76C2 /* Deduplication.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = Deduplication.py; path = ../../../../Desktop/Deduplication.py; sourceTree = "<group>"; };
 		EBE24E0F66C28B7526AE9F077D173342 /* MultiLanguage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MultiLanguage.modulemap; sourceTree = "<group>"; };
 		F7E803452596CEEE1D5E3CEA95CC9550 /* Pods-MultiLanguage_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MultiLanguage_Example-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,7 +150,6 @@
 				2CD210D13EBF2209DF609FDA6E9A84EA /* Config.plist */,
 				E30155545A000E48A81EBBF792D20759 /* firstScript.py */,
 				E4B5D2EE681A8A73FB51876223B739A2 /* secound.py */,
-				E862EC50255B9529002E76C2 /* Deduplication.py */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -358,7 +355,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E862EC51255B9529002E76C2 /* Deduplication.py in Resources */,
 				3DCF1DDF92BB49EC0857539B4A190383 /* Config.plist in Resources */,
 				35681F2D1B428A62C19A589644EEB063 /* firstScript.py in Resources */,
 				48A9013088A30F80AC681C17CD9695E8 /* secound.py in Resources */,
