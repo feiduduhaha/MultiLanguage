@@ -22,10 +22,7 @@
     if ([self isKindOfClass:[UIButton class]]) {
         
         UIButton * btn = (UIButton *)self;
-        [self configTitleForButton:btn state:UIControlStateNormal];
-        [self configTitleForButton:btn state:UIControlStateHighlighted];
-        [self configTitleForButton:btn state:UIControlStateDisabled];
-        [self configTitleForButton:btn state:UIControlStateSelected];
+        [btn setTitle:btn.currentTitle.multi forState:btn.state];
     }
     else if ([self isKindOfClass:[UITextField class]]){
         
@@ -43,14 +40,6 @@
             
             item.title = item.title.multi;
         }
-    }
-}
-
-- (void)configTitleForButton:(UIButton *)button state:(UIControlState)state
-{
-    NSString *title = [button titleForState:state];
-    if (title) {
-        [button setTitle:title.multi forState:state];
     }
 }
 
