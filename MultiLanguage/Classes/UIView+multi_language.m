@@ -17,7 +17,10 @@
     if ([self isKindOfClass:[UILabel class]]) {
         
         UILabel * label = (UILabel *)self;
-        label.text = label.text.multi;
+        if (!label.attributedText.length) {
+            
+            label.text = label.text.multi;
+        }
     }
     if ([self isKindOfClass:[UIButton class]]) {
         
