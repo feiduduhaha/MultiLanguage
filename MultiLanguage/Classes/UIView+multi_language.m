@@ -17,9 +17,23 @@
     if ([self isKindOfClass:[UILabel class]]) {
         
         UILabel * label = (UILabel *)self;
-        if (!label.attributedText.length) {
+        if (!label.attributedText.string.length) {
             
             label.text = label.text.multi;
+        }else{
+            if (!label.attributedText) {
+                return;
+            }
+            NSRange range = NSMakeRange(0, 0);
+            NSDictionary *attributeInfo = [label.attributedText attributesAtIndex:0 effectiveRange:&range];
+            if (!attributeInfo) {
+                return;
+            }
+            if (range.length == label.attributedText.length) {
+                NSString *muti = label.attributedText.string.multi;
+                NSMutableAttributedString *attr = [[NSMutableAttributedString alloc] initWithString:muti attributes:attributeInfo];
+                label.attributedText = attr;
+            }
         }
     }
     if ([self isKindOfClass:[UIButton class]]) {
